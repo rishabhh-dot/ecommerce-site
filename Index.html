@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase Ecommerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Shop<span>Ease</span></div>
+  <nav id="navMenu">
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="menuBtn">☰</button>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Best Shopping Website</h1>
+    <p>Fashion, electronics, shoes and watches at best price.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <h2>Featured Products</h2>
+
+  <div class="filter">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('fashion')">Fashion</button>
+    <button onclick="filterProducts('electronics')">Electronics</button>
+    <button onclick="filterProducts('shoes')">Shoes</button>
+  </div>
+
+  <div class="product-box" id="productBox"></div>
+</section>
+
+<section class="cart">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <h3>Total: ₹<span id="total">0</span></h3>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Subscribe</h2>
+  <input type="email" id="email" placeholder="Enter email">
+  <button onclick="subscribe()">Subscribe</button>
+</section>
+
+<footer>
+  <p>© 2026 ShopEase | Made with HTML CSS JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+  </html>
